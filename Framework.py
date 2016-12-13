@@ -16,25 +16,6 @@ def ConfigSectionMap(section):
 test_file="input.ini"
 Config.read(test_file)
 
-
-        # DOC2VEC PATHS
-path_1150haber_d2v='data/1150haber_d2v/'
-path_1150haber_d2v_test='data/1150haber_d2v/test/'
-path_1150haber_d2v_train='data/1150haber_d2v/train/'
-path_news_d2v='data/news_d2v/'
-path_news_d2v_train='data/news_d2v/train'
-path_news_d2v_test='data/news_d2v/test'
-path_haberler_d2v = 'data/haberler_d2v'
-path_haberler_d2v_test = 'data/haberler_d2v/haberler-test'
-path_haberler_d2v_train = 'data/haberler_d2v/haberler-train'
-# TFIDF PATHS
-path_1150haber_tfidf='data/1150haber_tfidf/'
-path_news_tfidf='data/news_tfidf/'
-path_haberler_tfidf='data/haberler_tfidf/'
-path_haberler_tfidf_test='data/haberler_tfidf/test'
-path_haberler_tfidf_train='data/haberler_tfidf/train'
-
-
 D2V_analysis = Analysis()
 create_input_path_d2v= ConfigSectionMap("create_Doc2vec_input")['create_input_path_d2v']
 label= ConfigSectionMap("create_Doc2vec_input")['label']
